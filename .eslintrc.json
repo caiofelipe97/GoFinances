@@ -25,11 +25,27 @@
   },
   "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
-    "react/jsx-props-no-spreading": "off",
+    "no-shadow": "off",
+    "no-undef": "warn",
+    "no-unused-vars": "warn",
+    "@typescript-eslint/camelcase": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "camelcase": "off",
     "prettier/prettier": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "_"
+      }
+    ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".tsx"]
+      }
+    ],
     "import/prefer-default-export": "off",
     "@typescript-eslint/explicit-function-return-type": [
       "error",
